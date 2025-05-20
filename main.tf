@@ -14,7 +14,7 @@ resource "aws_subnet" "main_subnet" {
 }
 
 resource "aws_instance" "my-instance" {
-  ami           = "ami-0a7620d611d3ceae4" # Replace with a valid AMI in us-east-1
+  ami           = "ami-09b9b5665040249ad" # Replace with a valid AMI in us-east-1
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.main_subnet.id
 }
